@@ -224,9 +224,10 @@ body{
 	}
 
 	.carousel__keypad{
-		height: 5%;
-		top: 45vh;
-		left: 90%;
+		height: 10%;
+		width: 20%;
+		top: 40vh;
+		left: 80%;
 	}
 
 	.navbar{
