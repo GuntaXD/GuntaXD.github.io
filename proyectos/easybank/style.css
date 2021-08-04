@@ -273,7 +273,7 @@ header{
 
             .article{
                 border-radius: 8px 8px 0 0;
-                min-height: 92%;
+                min-height: 82%;
                 min-width: 260px;
                 width: 22%;
                 overflow: hidden;
@@ -283,7 +283,7 @@ header{
                 .article__info{
                     height: 60%;
                     width: 100%;
-                    padding: 8%;
+                    padding: 8% 8% 2%;
                 }
 
                 .article__img{
