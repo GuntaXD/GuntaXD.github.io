@@ -247,6 +247,11 @@ body{
 		padding-left: 6vw;
 	}
 
+	.navbar__links.visible{
+		top: 0px;
+		transition: all 1s;
+	}
+
 		.navbar__link{
 			color: #000;
 		}
@@ -255,7 +260,7 @@ body{
 			background: #000;
 		}
 
-	.navbar__btn--mobile{
+	.navbar__btn{
 		display: block;
 		height: 30px;
 		width: 34px;
@@ -284,16 +289,20 @@ body{
 				top: 18px;
 			}
 
-			.span1.btn-anim{
+			.navbar__btn.visible>.btn__menu--span{
+				background-color: #000;
+			}
+
+			.navbar__btn.visible>.span1{
 				transform: rotate(140deg);
 				top: 10px;
 			}
 
-			.span2.btn-anim{
+			.navbar__btn.visible>.span2{
 				opacity: 0%;
 			}
 
-			.span3.btn-anim{
+			.navbar__btn.visible>.span3{
 				transform: rotate(-140deg);
 				top: 10px;
 			}

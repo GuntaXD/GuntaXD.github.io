@@ -30,7 +30,11 @@ function inicioCarrusel(){
 
 let btn_right = document.querySelector(".btn__right");
 let btn_left = document.querySelector(".btn__left");
-let btn_menu = document.querySelector(".navbar__btn--mobile");
+let btn_menu = document.querySelector(".navbar__btn");
+
+let navbar_links = document.querySelector(".navbar__links");
+let links = navbar_links.getElementsByClassName("navbar__link");
+let canvas = document.querySelector(".canvas");
 
 window.addEventListener("resize",inicioCarrusel);
 
@@ -111,53 +115,22 @@ btn_left.addEventListener("click",()=>{
 
 btn_menu.addEventListener("click",()=>{
 
-	let spans = document.getElementsByClassName("btn__menu--span");
-	let navbar_links = document.querySelector(".navbar__links");
-	let span_ind = document.getElementsByClassName("btn__menu--span");
+	toggleVisible(btn_menu,canvas,navbar_links);
 
-	for( let i = 0; i < spans.length ; i++ ){
-
-		spans[i].classList.toggle("btn-anim");
-
-	}
-
-	if( navbar_links.style.cssText == "transition: all 1s ease 0s;" || 
-		navbar_links.style.cssText == ""){
-		navbar_links.style.cssText = "top:0px;transition:1s;";
-	}else{
-		navbar_links.style.cssText = "transition:1s";
-	}
-
-	if( span_ind[0].style.cssText == ""){
-		
-		for( let i = 0; i < span_ind.length ; i++ ){
-
-			span_ind[i].style.cssText = "background: #000;";
-
-		}
-
-	}else{
-
-		for( let i = 0; i < span_ind.length ; i++ ){
-
-			span_ind[i].style.cssText = "";
-
-		}
-
-	}
-
-	let canvas = document.querySelector(".canvas");
-
-	if ( !canvas.classList.contains("visible") ){
-
-		canvas.classList.toggle("visible");
-
-	}else{
-
-		canvas.classList.toggle("visible");
-
-	}
-
-
-	
 });
+
+for( let i = 0; i < links.length ; i++ ){
+
+	links[i].addEventListener("click" , ()=>{
+		toggleVisible(btn_menu,canvas,navbar_links);
+	});
+
+}
+
+function toggleVisible(...elements){
+
+	for( let i = 0; i < elements.length ; i++ ){
+		elements[i].classList.toggle("visible");
+	}
+
+}
