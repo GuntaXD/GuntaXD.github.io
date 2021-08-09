@@ -759,19 +759,19 @@ a{
                     margin: 1em 0;
                 }
 
-                    .social__img--hover{
+                    .footer__social .social__img--hover{
                         display: none;
                     }
 
-                    .social__link {
+                    .footer__social .social__link {
                         margin: 0 1em;
                     }
 
-                    .social__link:hover .social__img{
+                    .footer__social .social__link:hover .social__img{
                         display: none;
                     }
 
-                    .social__link:hover .social__img--hover{
+                    .footer__social .social__link:hover .social__img--hover{
                         display: inline-block;
                     }
 

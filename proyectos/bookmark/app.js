@@ -11,13 +11,17 @@ btn_menu.addEventListener("click" , ()=>{
 for( let i = 0 ; i < navbar_link.length ; i++ ){
 
     navbar_link[i].addEventListener("click" , ()=>{
-        navbar.classList.toggle("visible");
+        if( window.innerWidth < 1024 ){
+            navbar.classList.toggle("visible");
+        }
     });
 
 }
 
 navbar_link_login.addEventListener("click", ()=>{
-    navbar.classList.toggle("visible");
+    if( window.innerWidth < 1024 ){
+        navbar.classList.toggle("visible");
+    }
 });
 
 for( let i = 0 ; i < social_links.length ; i++ ){
