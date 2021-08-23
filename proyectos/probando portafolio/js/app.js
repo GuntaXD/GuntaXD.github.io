@@ -126,7 +126,7 @@ btn_menu.addEventListener("click" , ()=>{
 
   navbar.classList.toggle("active");
   active.classList.remove("active");
-  links[ Math.round( top / window.innerHeight )].classList.toggle("active");
+  links[ Math.floor( top / window.innerHeight )].classList.toggle("active");
 
 });
 
@@ -141,4 +141,54 @@ for(let i = 0; i < links.length ; i++ ){
     
   });
   
+}
+
+// funcionalidades carrusel o slider
+
+let carousel = document.querySelector(".carousel");
+let skills = carousel.getElementsByClassName("skill");
+let dots = document.querySelector(".carousel__dots");
+let btn_right = document.querySelector(".right");
+let btn_left = document.querySelector(".left");
+
+let width = carousel.offsetWidth;
+let limite = Math.ceil( carousel.scrollWidth / width );
+setDots();
+
+window.addEventListener("resize", ()=>{
+  setDots();
+});
+
+carousel.addEventListener("scroll" , ()=>{
+  let dot = dots.getElementsByClassName("dot");
+  
+  dots.querySelector(".active").classList.remove("active");
+  dot[ Math.ceil( carousel.scrollLeft / width ) ].classList.add("active");
+
+});
+
+btn_right.addEventListener("click" , ()=>{
+  carousel.scrollLeft += width;
+});
+
+btn_left.addEventListener("click" , ()=>{
+  carousel.scrollLeft -= width;
+});
+
+function setDots(){
+
+  width = carousel.offsetWidth;
+  limite = Math.ceil( carousel.scrollWidth / width );
+
+  while (dots.firstChild) {
+    dots.removeChild(dots.firstChild);
+  }
+
+  for( let i = 0; i < limite ; i++ ){
+  
+    let dot = document.createElement("div");
+    let className = i == 0 ? "dot active" : "dot";
+    dot.classList = className;
+    dots.appendChild(dot);
+  }
 }
