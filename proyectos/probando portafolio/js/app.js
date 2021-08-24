@@ -125,8 +125,9 @@ btn_menu.addEventListener("click" , ()=>{
   let active = navbar.querySelector(".active");
 
   navbar.classList.toggle("active");
-  active.classList.remove("active");
-  links[ Math.floor( top / window.innerHeight )].classList.toggle("active");
+  // active.classList.remove("active");
+  // links[ Math.floor( top / window.innerHeight )].classList.toggle("active");
+  // intento de activar el active en una opcion dependiendo de en que seccio estoy
 
 });
 
@@ -191,4 +192,70 @@ function setDots(){
     dot.classList = className;
     dots.appendChild(dot);
   }
+}
+
+//funcionalidades multi-idioma
+
+let data = {
+  "english": {
+    "links": ["Home" , "About me", "Proyects", "Contact"],
+    "header title": "I'm <span class='orange__letters'>Juan Diaz</span>",
+    "header paragraph": `A creative <span class="orange__letters">frontend developer</span>
+    looking for new challenges`,
+    "resume" : "resume",
+    "about title": "About me",
+    "about me": `I'm <span class="orange__letters">self-taught</span> in constant search to improve my skills. I consider that each challenge is an opportunity to improve. I am a <span class="orange__letters">systems engineering student</span> living in Venezuela. Interested in powerlifting and e-sports.`,
+    "technology title": "Technologies",
+    "proyects title": "Proyects",
+    "footer message": "Thank you for visiting my portfolio, if you have any questions you can contact me through my social networks",
+    
+  },
+  "spanish":{
+    "links": ["Inicio" , "Sobre mi" , "Proyectos", "Contacto"],
+    "header title": "Soy <span class='orange__letters'>Juan Diaz</span>",
+    "header paragraph": `Un <span class="orange__letters">desarrollador frontend</span>
+    en busca de nuevos retos`,
+    "resume": "curriculum",
+    "about title": "Sobre mi",
+    "about me": `Soy <span class="orange__letters">autodidacta</span> en constante busqueda de mejorar mis habilidades. Considero que cada reto es una oportunidad para mejorar. Soy estudiante de <span class="orange__letters">ingenieria de sistemas</span> viviendo en Venezuela. Interesado en el powerlifting y los e-sports.`,
+    "technology title": "Tecnologias",
+    "proyects title": "Proyectos",
+    "footer message": "gracias por visitar mi portafolio, ante cualquier duda puedes contactarme mediante mis redes sociales",
+
+  }
+}
+
+let btn_traduccion = document.querySelector(".btn__traduccion--img");
+
+btn_traduccion.addEventListener("click", traduccion );
+
+function traduccion( ){
+  this.classList.toggle("active");
+
+  let language = this.classList.contains("active") ? "english" : "spanish" ;
+
+    let nav_links = document.querySelectorAll(".navbar__link a");
+    let header_title = document.querySelector(".header__title");
+    let header_paragraph = document.querySelector(".header__paragraph");
+    let header_link = document.querySelector(".header__link");
+    let about_title = document.querySelector(".about__title");
+    let about_me = document.querySelector(".about__me");
+    let tecnology_title = document.querySelector(".about__tecnology--title");
+    let proyects_title = document.querySelector(".proyects__title");
+    let footer_message = document.querySelector(".footer__message");
+
+    nav_links.forEach( (elem , index)=>{ 
+      elem.textContent = data[ language ].links[index];
+    });
+
+    console.log(data);
+
+    header_title.innerHTML = data[ language ][ "header title" ];
+    header_paragraph.innerHTML = data[ language ][ "header paragraph" ];
+    header_link.textContent = data[ language ][ "resume" ];
+    about_title.textContent = data[ language ][ "about title" ];
+    about_me.innerHTML = data[ language ][ "about me" ];
+    tecnology_title.textContent = data[ language ][ "technology title"];
+    proyects_title.textContent = data[ language ][ "proyects title" ];
+    footer_message.textContent = data[ language ][ "footer message" ];
 }

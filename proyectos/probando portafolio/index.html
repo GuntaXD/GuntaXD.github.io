@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +13,7 @@
                 <li class="navbar__link active"><a href="#header">Inicio</a></li>
                 <li class="navbar__link"><a href="#about">Sobre mi</a></li>
                 <li class="navbar__link"><a href="#proyects" >Proyectos</a></li>
-                <li class="navbar__link"><a href="#tres" >Contacto</a></li>
-                <li class="navbar__link"><a href="#dos" >Curriculum</a></li>
-                <!-- <li>aqui va el boton de cambio de idioma</li> -->
+                <li class="navbar__link"><a href="#contact" >Contacto</a></li>
             </ul>
             <div class="btn__menu">
                 <span class="btn__menu--span span1"></span>
@@ -23,13 +21,16 @@
                 <span class="btn__menu--span span3"></span>
             </div>
         </nav>
+        <div class="btn__traduccion">
+            <img src="assets\traducir.svg" alt="" class="btn__traduccion--img">
+        </div>
         <div class="header__info">
             <h1 class="header__title">Soy <span class="orange__letters">Juan Diaz</span></h1>
             <p class="header__paragraph">
                 Un <span class="orange__letters">desarrollador frontend</span>
                 creativo en busca de nuevo retos
             </p>
-            <a href="#contacto" class="header__link">Contactame</a>
+            <a href="resources\Curriculum Juan Diaz.pdf" target="_blank" class="header__link">Curriculum</a>
         </div>
         <div class="header__img">
             <div class="header__circle"></div>
@@ -80,7 +81,7 @@
                 <img src="assets\loopstudios.png" alt="" class="proyect__img">
                 <div class="proyect__info">
                     <h3 class="proyect__title">Loopstudios</h3>
-                    <a href="#" class="proyect__link">live demo</a>
+                    <a href="proyects\loopstudios\index.html" target="_blank" class="proyect__link">live demo</a>
                     <a href="#" class="proyect__link">Code</a>
                 </div>
             </div>
@@ -89,7 +90,7 @@
                 <img src="assets\room.png" alt="" class="proyect__img">
                 <div class="proyect__info">
                     <h3 class="proyect__title">Room</h3>
-                    <a href="#" class="proyect__link">live demo</a>
+                    <a href="proyects\room-homepage\index.html" target="_blank" class="proyect__link">live demo</a>
                     <a href="#" class="proyect__link">Code</a>
                 </div>
             </div>
@@ -98,7 +99,7 @@
                 <img src="assets\bookmark.png" alt="" class="proyect__img">
                 <div class="proyect__info">
                     <h3 class="proyect__title">Bookmark</h3>
-                    <a href="#" class="proyect__link">live demo</a>
+                    <a href="proyects\bookmark\index.html" target="_blank" class="proyect__link">live demo</a>
                     <a href="#" class="proyect__link">Code</a>
                 </div>
             </div>
@@ -107,7 +108,7 @@
                 <img src="assets\easybank.png" alt="" class="proyect__img">
                 <div class="proyect__info">
                     <h3 class="proyect__title">Easybank</h3>
-                    <a href="#" class="proyect__link">live demo</a>
+                    <a href="proyects\easybank\index.html" target="_blank" class="proyect__link">live demo</a>
                     <a href="#" class="proyect__link">Code</a>
                 </div>
             </div>
@@ -116,7 +117,7 @@
                 <img src="assets\manage.png" alt="" class="proyect__img">
                 <div class="proyect__info">
                     <h3 class="proyect__title">Manage</h3>
-                    <a href="#" class="proyect__link">live demo</a>
+                    <a href="proyects\manage\index.html" target="_blank" class="proyect__link">live demo</a>
                     <a href="#" class="proyect__link">Code</a>
                 </div>
             </div>
@@ -127,11 +128,19 @@
             <p class="footer__message">
                 gracias por visitar mi portafolio, ante cualquier duda puedes contactarme mediante mis redes sociales
             </p>
-            <div class="footer__social">
-                <img src="assets\whatsapp.svg" alt="" class="footer__social--icon">
-                <img src="assets\instagram.svg" alt="" class="footer__social--icon">
-                <img src="assets\twitter.svg" alt="" class="footer__social--icon">
-                <img src="assets\linkedin.svg" alt="" class="footer__social--icon">
+            <div class="footer__social" id="contact">
+                <a href="#" class="footer__link">
+                    <img src="assets\whatsapp.svg" alt="" class="footer__social--icon">
+                </a>
+                <a href="#" class="footer__link">
+                    <img src="assets\instagram.svg" alt="" class="footer__social--icon">
+                </a>
+                <a href="#" class="footer__link">
+                    <img src="assets\twitter.svg" alt="" class="footer__social--icon">
+                </a>
+                <a href="#" class="footer__link">
+                    <img src="assets\linkedin.svg" alt="" class="footer__social--icon">
+                </a> 
             </div>
         </div>
     </footer>
