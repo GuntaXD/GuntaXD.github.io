@@ -1,191 +1,160 @@
-<html>
+<html lang="es">
 <head>
-	<title>Juan Diaz Portafolio</title>
-	
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
-	minimum-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/glider.min.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
-	
-	
-	
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Juan Diaz</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<main class="fullpage">
-		<nav class="nav">
-			<ul class="nav__hidden">
-				<li><a class="nav__link" href="#presentacion" onclick="showmenu()">INICIO</a></li>
-				<li><a class="nav__link" href="#proyects" onclick="showmenu()">PROYECTOS</a></li>
-				<li><a class="nav__link" href="#about" onclick="showmenu()">SOBRE MI</a></li>
-				<li><a class="nav__link" href="#contact" onclick="showmenu()">CONTACTO</a></li>
-			</ul>
-			<div onclick="showmenu()" class="btn-menu">
-				<span class="btn-menu__span span1"></span>
-				<span class="btn-menu__span span2"></span>
-				<span class="btn-menu__span span3"></span>
-			</div>
-		</nav>
-		<header id="presentacion">
-			<div class="i-am">
-				<h1 class="i-am__name">Juan Diaz</h1>
-				<p class="i-am__profesion"> diseñador web / maquetador web<br> Creo en el poder de no rendirse</p>
-			</div>
-			<img class="star star1" src="imagenes/star-solid.svg">
-			<img class="star star2" src="imagenes/star-solid.svg">
-			<img class="star star3" src="imagenes/star-solid.svg">
-			<img class="star star4" src="imagenes/star-solid.svg">
-			<img class="star star5" src="imagenes/star-solid.svg">
-			<img class="star star6" src="imagenes/star-solid.svg">
-			<img class="star star7" src="imagenes/star-solid.svg">
-			<img class="star star8" src="imagenes/star-solid.svg">
-			<img class="star star9" src="imagenes/star-solid.svg">
-			<img class="star star10" src="imagenes/star-solid.svg">
-			<div id="luna">
-				<img src="imagenes/luna.svg">
-			</div>
-			<img class="ciudad fondo" src="imagenes/ciudad-fondo.svg">
-			<img class="ciudad uno" src="imagenes/ciudad1.svg">
-			<img class="ciudad dos" src="imagenes/ciudad2.svg">
-			<img class="ciudad tres" src="imagenes/ciudad3.svg">
-			<img class="ciudad cuatro" src="imagenes/ciudad4.svg">
-		</header>
-
-		<section id="proyects">
-			<h3 class="proyects_title">
-				<span class="proyects_title-letter" style="--l:'P';">P</span>
-				<span class="proyects_title-letter" style="--l:'R';">R</span>
-				<span class="proyects_title-letter" style="--l:'O';">O</span>
-				<span class="proyects_title-letter" style="--l:'Y';">Y</span>
-				<span class="proyects_title-letter" style="--l:'E';">E</span>
-				<span class="proyects_title-letter" style="--l:'C';">C</span>
-				<span class="proyects_title-letter" style="--l:'T';">T</span>
-				<span class="proyects_title-letter" style="--l:'O';">O</span>
-				<span class="proyects_title-letter" style="--l:'S';">S</span>
-			</h3>
-
-			<div class="proyects__contenedor">
-		<div class="carousel">
-		<div class="carousel__contenedor">
-			<button aria-label='anterior' class="carousel__anterior">
-				<img src="imagenes/chevron-left-solid.svg">
-			</button>
-
-			<div class="carousel__lista" >
-				<div class="card">
-					<img src="imagenes/reloj-app.png">
-					<div class="card__descripcion">
-						<h3 class="card__title">RELOJ</h3>
-						<p>un reloj con la funcion de cronometro y temporizador hecho en javascript</p>
-						<a class="card__link" href="proyectos/reloj/index.html" target="_BLANK">ver mas</a>
-					</div>
-				</div>
-				<div class="card">
-					<img src="proyectos/testimonials-grid/foto-presentacion.png">
-					<div class="card__descripcion">
-						<h3 class="card__title">TESTIMONIALS</h3>
-						<p>cards de testimonios utilazando grid es totalmente responsive</p>
-						<a class="card__link" href="proyectos/testimonials-grid/index.html" target="_BLANK">ver mas</a>
-					</div>
-				</div>
-				<div class="card">
-					<img src="proyectos/select%20box/selectBox.png">
-					<div class="card__descripcion">
-						<h3 class="card__title">SELECT BOX</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua</p>
-						<a class="card__link" href="proyectos/select%20box/index.html" target="_BLANK">ver mas</a>
-					</div>
-				</div>
-				<div class="card">
-					<img src="imagenes/imagenPrueba.jpg">
-					<div class="card__descripcion">
-						<h3 class="card__title">TITULO</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua</p>
-						<a class="card__link" href="#">ver mas</a>
-					</div>
-				</div>
-				<div class="card">
-					<img src="imagenes/imagenPrueba.jpg">
-					<div class="card__descripcion">
-						<h3 class="card__title">TITULO</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua</p>
-						<a class="card__link" href="#">ver mas</a>
-					</div>
-				</div>
-				<div class="card">
-					<img src="imagenes/imagenPrueba.jpg">
-					<div class="card__descripcion">
-						<h3 class="card__title">TITULO</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua</p>
-						<a class="card__link" href="#">ver mas</a>
-					</div>
-				</div>
-			</div>
-
-			<button aria-label='siguiente' class="carousel__siguiente">
-				<img src="imagenes/chevron-right-solid.svg">
-			</button>
-		</div>
-	</div>
-
-	<div role="tablist" class="carousel__indicadores"></div>
-	</div>
-	</section>
-	<section id="about">
-		<h4 class="title">
-			<span class="title__content">SOBRE MI</span>
-		</h4>
-		<img src="imagenes/developer.svg" class="about__img">
-		<div class="about__descripcion">
-			<p>soy un estudiante de ingenieria de sistemas, autodidacta y apasionado por el desarrollo web</p>
-		</div>
-	</section>
-
-	<section id="contact">
-		<h4 class="title">
-			<span class="title__content">CONTACTO</span>
-		</h4>
-		<div class="contact__form">
-			<form id="form" action="https://formsubmit.co/juanferreira65@gmail.com" method = "POST">
-				<input type="hidden" name="_webhook" value="https://guntaxd.github.io/#contact">
-				<input type="hidden" name="_captcha" value="false">
-				<input type="text" name="name" id="name" placeholder="Nombre" required>
-				<input type="text" name="email" id="email" placeholder="Email" required>
-				<textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje"></textarea>
-				<button type="submit" id="submit">Enviar</button>
-			</form>
-		</div>
-		<img src="imagenes/laptop.svg" class="contact__img">
-		<div class="contact__redes">
-			<input type="hidden" name="_captcha" value="false">
-			<a href="https://wa.link/7rgh7g" class="contact__link" target="_BLANK><img class="contact__icon" src="imagenes/whatsapp-brands.svg">Whatsapp</a>
-			<a href="https://twitter.com/AlejoDF16" class="contact__link" target="_BLANK><img class="contact__icon" src="imagenes/twitter-brands.svg">Twitter</a>
-			<a href="https://github.com/GuntaXD" class="contact__link target="_BLANK"><img class="contact__icon" src="imagenes/github-brands.svg">Github</a>
-			<a href="mailto:juanferreira65@gmail.com?Subject=Interesado%20en%20tus%20servicios%20como%20web%20designer" class="contact__link" target="_BLANK><img class="contact__icon" src="imagenes/envelope-solid.svg">Gmail</a>
-			<a href="https://www.linkedin.com/in/juan-alejandro-diaz-ferreira-4b38a2118/" class="contact__link"><img class="contact__icon" src="imagenes/linkedin-brands.svg" target="_BLANK>Linkedin</a>
-		</div>
-	</section>
-	<footer class="footer">
-		<p>las imagenes utilizadas fueron sutilmente modificadas</p>
-		<p>links de los autores:</p>
-		<a href="https://www.freepik.es/vectores/ciudad">Vector de Ciudad creado por pikisuperstar</a>
-		<a href="https://www.freepik.es/vectores/fondo">Vector de Fondo creado por vectorpocket</a>
-		<a href="https://www.freepik.es/vectores/ordenador">Vector de Ordenador creado por catalyststuff</a>
-		<a href="https://www.freepik.es/vectores/icono">Vector de Icono creado por fullvector</a>
-	</footer>
-	</main>
-
-	<script src="javascript/index.js"></script>
-	<script type="text/javascript" src="javascript/glider.min.js"></script>
-	<script src="javascript/scrollreveal.min.js"></script>
-	
-	
-</body onload="cancelar()">
+    <div id="particles-js"></div>
+    <div class="loader">
+        <div class="rings">
+            <div class="ring one">
+                <div class="ring two">
+                    <div class="ring three">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header grid" id="header">
+        <nav class="navbar">
+            <ul class="navbar__links">
+                <li class="navbar__link active"><a href="#header">Inicio</a></li>
+                <li class="navbar__link"><a href="#about">Sobre mi</a></li>
+                <li class="navbar__link"><a href="#proyects" >Proyectos</a></li>
+                <li class="navbar__link"><a href="#contact" >Contacto</a></li>
+            </ul>
+            <div class="btn__menu">
+                <span class="btn__menu--span span1"></span>
+                <span class="btn__menu--span span2"></span>
+                <span class="btn__menu--span span3"></span>
+            </div>
+        </nav>
+        <div class="btn__traduccion">
+            <img src="assets\traducir.svg" alt="" class="btn__traduccion--img">
+        </div>
+        <div class="header__info">
+            <h1 class="header__title">Soy <span class="orange__letters">Juan Diaz</span></h1>
+            <p class="header__paragraph">
+                Un <span class="orange__letters">desarrollador frontend</span>
+                creativo en busca de nuevo retos
+            </p>
+            <a href="resources\Curriculum Juan Diaz.pdf" target="_blank" class="header__link">Curriculum</a>
+        </div>
+        <div class="header__img">
+            <div class="header__circle"></div>
+            <img src="assets\pc.svg" alt="an animated pc" class="img">
+        </div>
+        <a href="#about" class="header__link--relative">
+                <img src="assets\flecha-hacia-abajo.svg" alt="" class="header__link--img">
+                <img src="assets\flecha-hacia-abajo-orange.svg" alt="" class="header__link--orange">
+        </a>
+    </header>
+    <section class="about" id="about">
+        <div class="about__container grid">
+            <h2 class="about__title">Sobre mi</h2>
+            <p class="about__me">
+                Soy <span class="orange__letters">autodidacta</span> en constante busqueda de mejorar mis habilidades. Considero que cada reto es una oportunidad para mejorar. Soy estudiante de <span class="orange__letters">ingenieria de sistemas</span> viviendo en Venezuela. Interesado en el powerlifting y los e-sports.
+            </p>
+            <div class="about__img">
+                <img src="assets\developer.svg" alt="a developer draw">
+            </div>
+            <h3 class="about__tecnology--title">Tecnologias</h3>
+            <div class="carousel">
+                <div class="skill">
+                    <img src="assets\html5-logo.svg" alt="">
+                </div>
+                <div class="skill">
+                    <img src="assets\css-logo.svg" alt="">
+                </div>
+                <div class="skill">
+                    <img src="assets\js-logo.svg" alt="">
+                </div>
+                <div class="skill">
+                    <img src="assets\git-logo.svg" alt="">
+                </div>
+            </div>
+            <div class="keypad">
+                <div class="right"><img src="assets\right-chevron.svg" alt=""></div>
+                <div class="left"><img src="assets\left-chevron.svg" alt=""></div>
+            </div>
+            <div class="carousel__dots">
+            </div>
+        </div>
+    </section>
+    <section class="proyects" id="proyects">
+        <div class="proyects__container grid">
+            <h2 class="proyects__title">Proyectos</h2>
+            <div class="proyect">
+                <img src="assets\loopstudios-mobile.png" alt="" class="proyect__img--mobile">
+                <img src="assets\loopstudios.png" alt="" class="proyect__img">
+                <div class="proyect__info">
+                    <h3 class="proyect__title">Loopstudios</h3>
+                    <a href="proyects\loopstudios\index.html" target="_blank" class="proyect__link">live demo</a>
+                    <a href="https://github.com/GuntaXD/loopstudios" class="proyect__link">Code</a>
+                </div>
+            </div>
+            <div class="proyect">
+                <img src="assets\room-mobile.png" alt="" class="proyect__img--mobile">
+                <img src="assets\room.png" alt="" class="proyect__img">
+                <div class="proyect__info">
+                    <h3 class="proyect__title">Room</h3>
+                    <a href="proyects\room-homepage\index.html" target="_blank" class="proyect__link">live demo</a>
+                    <a href="https://github.com/GuntaXD/room-homepage" class="proyect__link">Code</a>
+                </div>
+            </div>
+            <div class="proyect">
+                <img src="assets\bookmark-mobile.png" alt="" class="proyect__img--mobile">
+                <img src="assets\bookmark.png" alt="" class="proyect__img">
+                <div class="proyect__info">
+                    <h3 class="proyect__title">Bookmark</h3>
+                    <a href="proyects\bookmark\index.html" target="_blank" class="proyect__link">live demo</a>
+                    <a href="https://github.com/GuntaXD/bookmark-landing-page" class="proyect__link">Code</a>
+                </div>
+            </div>
+            <div class="proyect">
+                <img src="assets\easybank-mobile.png" alt="" class="proyect__img--mobile">
+                <img src="assets\easybank.png" alt="" class="proyect__img">
+                <div class="proyect__info">
+                    <h3 class="proyect__title">Easybank</h3>
+                    <a href="proyects\easybank\index.html" target="_blank" class="proyect__link">live demo</a>
+                    <a href="https://github.com/GuntaXD/easybank-landing-page" class="proyect__link">Code</a>
+                </div>
+            </div>
+            <div class="proyect">
+                <img src="assets\manage-mobile.png" alt="" class="proyect__img--mobile">
+                <img src="assets\manage.png" alt="" class="proyect__img">
+                <div class="proyect__info">
+                    <h3 class="proyect__title">Manage</h3>
+                    <a href="proyects\manage\index.html" target="_blank" class="proyect__link">live demo</a>
+                    <a href="https://github.com/GuntaXD/manage" class="proyect__link">Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__message">
+                gracias por visitar mi portafolio, ante cualquier duda puedes contactarme mediante mis redes sociales
+            </p>
+            <div class="footer__social" id="contact">
+                <a href="wa.link/tot4oh" class="footer__link">
+                    <img src="assets\whatsapp.svg" alt="" class="footer__social--icon">
+                </a>
+                <a href="https://www.instagram.com/gunta17/" class="footer__link">
+                    <img src="assets\instagram.svg" alt="" class="footer__social--icon">
+                </a>
+                <a href="https://twitter.com/AlejoDF16" class="footer__link">
+                    <img src="assets\twitter.svg" alt="" class="footer__social--icon">
+                </a>
+                <a href="https://www.linkedin.com/in/juan-alejandro-diaz-ferreira-4b38a2118/" class="footer__link">
+                    <img src="assets\linkedin.svg" alt="" class="footer__social--icon">
+                </a> 
+            </div>
+        </div>
+    </footer>
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
 </html>
