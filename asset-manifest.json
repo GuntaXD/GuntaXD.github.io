@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2412994f.css",
+    "main.js": "/static/js/main.9c338627.js",
+    "static/media/banner1.jpg": "/static/media/banner1.621757f03f70d833571a.jpg",
+    "static/media/loopstudios (2).jpeg": "/static/media/loopstudios (2).2cbc47e6237bedf26aa3.jpeg",
+    "static/media/freetogame.jpeg": "/static/media/freetogame.e0e7f3475657355e75d2.jpeg",
+    "static/media/VarelaRound-Regular.ttf": "/static/media/VarelaRound-Regular.6b0ad79431843e696f58.ttf",
+    "static/media/easybank.jpeg": "/static/media/easybank.c47611606283c7368cfd.jpeg",
+    "static/media/bookmark.jpeg": "/static/media/bookmark.d71ac91d757021429ea0.jpeg",
+    "static/media/apiCountries.jpg": "/static/media/apiCountries.d64b059ad0cba22eeaed.jpg",
+    "static/media/manage.jpeg": "/static/media/manage.ea70fbb8bf03ea68bcd9.jpeg",
+    "static/media/profile1.jpg": "/static/media/profile1.d33703a17bb89f04c08d.jpg",
+    "static/media/room.jpeg": "/static/media/room.24f395d96943e19538c8.jpeg",
+    "static/media/bariol_regular-webfont.woff2": "/static/media/bariol_regular-webfont.6577b355810bf515c5bf.woff2",
+    "index.html": "/index.html",
+    "main.2412994f.css.map": "/static/css/main.2412994f.css.map",
+    "main.9c338627.js.map": "/static/js/main.9c338627.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2412994f.css",
+    "static/js/main.9c338627.js"
+  ]
+}
