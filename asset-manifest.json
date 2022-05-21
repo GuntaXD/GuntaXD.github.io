@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2412994f.css",
-    "main.js": "/static/js/main.9c338627.js",
+    "main.js": "/static/js/main.6d6f8589.js",
     "static/media/banner1.jpg": "/static/media/banner1.621757f03f70d833571a.jpg",
     "static/media/loopstudios (2).jpeg": "/static/media/loopstudios (2).2cbc47e6237bedf26aa3.jpeg",
     "static/media/freetogame.jpeg": "/static/media/freetogame.e0e7f3475657355e75d2.jpeg",
@@ -13,12 +13,13 @@
     "static/media/profile1.jpg": "/static/media/profile1.d33703a17bb89f04c08d.jpg",
     "static/media/room.jpeg": "/static/media/room.24f395d96943e19538c8.jpeg",
     "static/media/bariol_regular-webfont.woff2": "/static/media/bariol_regular-webfont.6577b355810bf515c5bf.woff2",
+    "static/media/Juan_Diaz_Ferreira_Curriculum.pdf": "/static/media/Juan_Diaz_Ferreira_Curriculum.9022ffd407743c539ac8.pdf",
     "index.html": "/index.html",
     "main.2412994f.css.map": "/static/css/main.2412994f.css.map",
-    "main.9c338627.js.map": "/static/js/main.9c338627.js.map"
+    "main.6d6f8589.js.map": "/static/js/main.6d6f8589.js.map"
   },
   "entrypoints": [
     "static/css/main.2412994f.css",
-    "static/js/main.9c338627.js"
+    "static/js/main.6d6f8589.js"
   ]
 }
